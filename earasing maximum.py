@@ -15,9 +15,15 @@ for i in range(n):
 for i in range(n):
     if list[i] == max :
         max_num +=1
+print("max_num=",max_num)
 if max_num == 1 :
     list.remove(max)
-elif max_num > 2:
-    for i in range(max_num // 3):
-        list.remove(max)
-print(list)
+    for i in range (n-1):
+        print(list[i], end=' ')
+rank = 0
+if (max_num > 2):
+    for i in range(n):
+        if list[i] == max:
+            rank += 1
+        if rank != 3 :
+            print(list[i], end=' ')
