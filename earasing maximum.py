@@ -27,3 +27,5 @@ if (max_num > 2):
             rank += 1
         if rank != 3 :
             print(list[i], end=' ')
+        if rank == 3:
+            rank = 0
